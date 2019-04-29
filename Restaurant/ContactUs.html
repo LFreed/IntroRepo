@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Luke Freed
+    1/8/19
+    most recent revision:
+-->
+<html lang="en">
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+       <noscript class="noscript">
+     <div id="div100">
+     Site Best Viewed With JavaScript Enabled
+     </div>
+  </noscript>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <body>
+
+    <style>
+
+      body {
+        background-color: #d2e0dc;
+        font-family: arial, helvetica, sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      label, fieldset {
+        font-size: 1.1em;
+      }
+      input[type=text] {
+        border: 2px solid #0d1f2d;
+        width: 50%;
+        padding: 8px 8px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        font-size: 1.1em;
+      }
+      fieldset {
+        background-color: #fef9ff;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 12px 0px;
+        box-sizing: border-box;
+      }
+      select, textarea {
+        margin: 12px 0;
+        font-size: 1em;
+      }
+      input[type=submit] {
+        font-size: 1.1em;
+        background-color: #546a7b;
+        color: #fef9ff;
+        padding: 4px 8px;
+      }
+      input[type=submit]:hover {
+        background-color: #f2eded;
+        color: #546a7b;
+      }
+      textarea {
+        width: 100%;
+        height: 200px;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        border: 2px solid #0d1f2d;
+        border-radius: 3px;
+        background-color: #fff;
+        resize: none;
+      }
+      nav {
+        border-top: thin #5b7d87 solid;
+        border-bottom: thin #5b7d87 solid;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      nav .btn {
+        background-color: #5b7d87;
+        color: #fef9ff;
+      }
+      nav .btn:hover {
+        font-weight: bold;
+      }
+      nav a:hover {
+        background-color: #03ba28;
+        color: #005621;
+      }
+
+    </style>
+
+    </head>
+    <header class="jumbotron">
+      <h1>Lukes Bistro</h1>
+    </header>
+    <nav class="border">
+      <p align="center"><a class=" fas fa-home btn badge-pill" href="home.html">Home</a> <a class="fas fa btn badge-pill" href="menu.html">Menu</a> <a class="fas fa btn badge-pill" href="ContactUs.html">Contact Us</a></p>
+      <div class="clear-float"></div>
+    </nav>
+    <hr />
+    <form action="submit.html" method="POST">
+    <label for="name">Name:</label> <br />
+    <input type="text" id="name" name="name"> <br />
+    <label for="email">Email:</label><br />
+    <input type="text" id="email" name="email"> <br />
+    <label for="phone">Phone Number:</label> <br />
+    <input type="text" id="phone" name="phone"> <br />
+    <label for="contact">Reason for Inquiry:</label> <br />
+    <select id="contact" name="contact">
+    <option value="default" selected>--Select One--</option>
+    <option value="catering">Catering</option>
+    <option value="privateParty">Private Party</option>
+    <option value="feedback">Feedback</option>
+    <option value="other">Other</option>
+    </select>
+
+    <label for="info">Additional Information:</label><br />
+    <textarea id="info" name="info"></textarea>
+
+    <input type="submit" name="submit" value="Submit">
+
+    <fieldset>
+    <legend>Have you been to the restaraunt?</legend><br />
+    <input type="radio" id="choice1" name="questionnaire" value="yes">
+    <label for="choice1">Yes</label><br />
+    <input type="radio" id="choice2" name="questionnaire" value="no">
+    <label for="choice2">No</label><br />
+    </fieldset>
+
+    <label for="bestContact">Best days to contact you:</label> <br />
+    <select id="bestContact" name="bestContact">
+    <option value="default" selected>--Select One--</option>
+    <option value="monday">Monday</option>
+    <option value="tuesday">Tuesday</option>
+    <option value="wendsday">Wendsday</option>
+    <option value="thursday">Thursday</option>
+    <option value="friday">Friday</option>
+    </select>
+
+    <input type="submit" name="submit" value="Send Request">
+
+  </body>
+  <footer>
+    <p>123 Yellow brick Rd. Louisville Ky, 40208</p>
+    <p>502-544-5584</p>
+  </footer>
+
+  </html>

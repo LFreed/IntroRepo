@@ -1,0 +1,15 @@
+/*
+Creator: Luke Freed
+Date created: 4/13/19
+Date last modified:
+*/
+ footer  {
+  background-color: #295f60;
+  color: #262b33;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+header.jumbotron {
+  background-color: #295f60;
+}
